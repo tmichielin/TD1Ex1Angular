@@ -10,4 +10,19 @@
 <div *ngIf="element == 1; then vrai; else faux"></div>
   <ng-template #vrai> <button>Login</button> </ng-template>
   <ng-template #faux> <button>Logout</button> </ng-template> 
+
+  <table>
+    <th>Id</th>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>Age</th>
+
+    <tr *ngFor="let e of etudiants; let i=index, let f=first; let l=last; let isEven=even" class="{{choixClasse(f, l, isEven)}}">
+        <td>{{i+1}}</td>
+        <td>{{e.nom}}</td>
+        <td>{{e.prenom}}</td>
+        <td>{{e.age}}</td>
+    </tr>
+
+  </table>
   

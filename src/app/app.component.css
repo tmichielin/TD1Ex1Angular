@@ -1,0 +1,11 @@
+.first_last {
+    font-weight: bold;
+}
+
+.ligne_pair {
+    background-color: blue;
+}
+
+.ligne_impair {
+    background-color: red;
+}
