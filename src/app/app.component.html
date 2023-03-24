@@ -6,3 +6,8 @@
 
 <h2 *ngIf="verif; else sinonBonjour">Bonjour {{ nom }}</h2>
 <ng-template #sinonBonjour> <h2>Hello World !</h2> </ng-template>
+
+<div *ngIf="element == 1; then vrai; else faux"></div>
+  <ng-template #vrai> <button>Login</button> </ng-template>
+  <ng-template #faux> <button>Logout</button> </ng-template> 
+  
