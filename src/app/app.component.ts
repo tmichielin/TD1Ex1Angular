@@ -10,5 +10,5 @@ export class AppComponent {
 
   nom:string = "Jean";
 
-  verif:boolean = true;
+  verif:boolean = false;
 }
